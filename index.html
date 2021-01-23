@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan ke-11 Membuat form</title>
+</head>
+<style>
+    input {
+        outline: none;
+    }
+    
+    input::placeholder {
+        color: #000;
+    }
+</style>
+
+<body>
+    <h2>Form</h2>
+    <p>Mengisi form</p>
+    <form action="">
+        <table>
+            <tr>
+                <td>Nama depan:</td>
+                <td>&nbsp;</td>
+                <td><input type="text" required placeholder="Nama depan"></td>
+            </tr>
+            <tr>
+                <td>Nama belakang:</td>
+                <td>&nbsp;</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>&nbsp;</td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>&nbsp;</td>
+                <td><input type="password" required></td>
+            </tr>
+            <tr>
+                <td>Umur:</td>
+                <td>&nbsp;</td>
+                <td><input type="number" required></td>
+            </tr>
+            <tr>
+                <td>Jenis kelamin:</td>
+                <td>&nbsp;</td>
+                <td>
+                    <select name="" id="">
+                        <optgroup label="kelamin">
+                            <option value="laki-laki">Laki-laki</option>
+                            <option value="perempuan">perempuan</option>
+                        </optgroup>
+                        <optgroup label="tidak jelas">
+                            <option value="tidak mau memberi tahu" disabled>tidak mau memberi tahu</option>
+                            <option value="custom">custom</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Komentar:</td>
+                <td>&nbsp;</td>
+                <td><textarea name="" id=""></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Kirim"></td>
+                <td>&nbsp;</td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
